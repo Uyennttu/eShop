@@ -11,7 +11,7 @@ namespace eShop.Data.Entities
     public class Order
     {
         public int Id { get; set; }
-        public DateTime OrderDate { get; set; } = DateTime.UtcNow;
+        public DateTime OrderDate { get; set; } 
         public Guid UserId { get; set; }
         public string ShipName { get; set; }
         public string ShipAddress { get; set; }
@@ -19,6 +19,6 @@ namespace eShop.Data.Entities
         public string ShipPhoneNumber { get; set; }
         public OrderStatus OrderStatus { get; set; }
 
-        List<OrderDetail> OrderDetails { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }
